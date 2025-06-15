@@ -1,0 +1,85 @@
+.popular {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(./../../images/popular-bg.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./../../images/popular-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: content;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.popular h2 {
+  margin-top: 3rem;
+}
+
+.popular .popular-content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.popular .popular-content .p-card {
+  padding: 1rem;
+  background-color: #f0f8ff;
+  -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.popular .popular-content .p-card img {
+  display: block;
+  width:100%;
+  height:100%;
+  border: 0.1rem solid #f7ca3e;
+}
+
+.popular .popular-content .p-card h4 {
+  color: #000000;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.popular .popular-content .p-card .review {
+  text-align: center;
+}
+
+.popular .popular-content .p-card .review i {
+  color: #f7ca3e;
+  font-size: 1.6rem;
+}
+
+.popular .popular-content .p-card .price {
+  padding: 1rem;
+  font-size: 2.6rem;
+}
+
+.popular .popular-content .p-card input {
+  margin-bottom: 1rem;
+}
+
+.popular .popular-content .p-card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0.4rem 0.8rem 2rem #333333;
+          box-shadow: 0.4rem 0.8rem 2rem #333333;
+}
+
+.popular .popular-content .p-card:nth-child(odd) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / 7;
+}
+
+.popular .popular-content .p-card:nth-child(even) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-column: 7 / 12;
+}
